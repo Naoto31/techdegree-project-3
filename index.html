@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE CODE REVIEW</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>The CODE REVIEW</h1>
+
+    </header>
+
+    <div class="sub-body">
+        <div class="head-content">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+
+        <hr class="hr-1">
+        <hr class="hr-2">
+        <form action="index.html" method="post">
+
+            <h3>Contact Information</h3>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="user-name" placeholder="Required">
+
+            <label for="mail">Email Address</label>
+            <input type="email" id="mail" name="user-email" placeholder="Required">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="user-phone">
+
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="user-address">
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="user-city">
+
+            <label for="state">State</label>
+            <select id="state" name="user-state">
+                <option value="choose-state">Choose State</option>
+
+            </select>
+           
+
+
+            <label for="zip-code">Zip Code</label>
+            <input type="number" name="zip-code" name="user-zip-code">
+
+        </form>
+
+        <hr class="hr-2">
+
+        <div class="second-form">
+        <h3>Newsletter</h3>
+
+
+        <label for="newsletter">Select the newsletters you would like to recieve</label>
+        <input type="checkbox" id="html-news" valuse="newsletter-html-news" name="user-newsletter">
+        <label class="light" for="html-news">HTML News</label><br>
+        <input type="checkbox" id="css-news" valuse="newsletter-css-news" name="user-newsletter">
+        <label class="light" for="css-news">CSS News</label><br>
+        <input type="checkbox" id="javascript-news" valuse="newsletter-javascript-news" name="user-newsletter">
+        <label class="light" for="javascript-news">Javascript News</label><br><br>
+
+
+        <label for="newsletter-format">Newsletter format</label>
+        <input type="radio" id="html-format" value="html-format" name="user-format">
+        <label for="html-format" class="light">HTML</label><br>
+
+        <input type="radio" id="plain-format" value="plain-format" name="user-format">
+        <label for="plain-format" class="light">Plain text</label><br><br>
+
+        
+        <label for="comment">Other topics you'd liket to hear about</label>
+        <textarea id="comment" name="user-comment" cols="30" rows="10"></textarea>
+
+        <button type="submit">Sign Up</button>
+
+    </div>
+
+
+
+
+
+    </div>
+
+    <footer>
+        <p>&copy; 2020 Naoto Sai<p>
+
+    </footer>
+</body>
+
+</html>

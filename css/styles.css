@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/* --- Basic --- */
+    
+header{ 
+    background-color: #142850;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+body {
+    
+font-family: 'Nunito', sans-serif;
+  color: #384047;
+  padding-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+
+}
+
+h3 {
+    padding-bottom: 25px;
+}
+
+/* --- form --- */
+
+form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+label.light {
+    font-weight: 300;
+    display: inline;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #f4eeff;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+select {
+    height: 50px;
+}
+
+
+input[type="number"] {
+    width: 40%;
+
+}
+
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+#state:focus {
+    border: 3px solid #555;
+    text-align:left;
+
+}
+
+
+input[placeholder='Required'] {
+   text-align: right;
+
+}
+
+
+/* --- Radio & Checkbox --- */
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+
+/* --- Class --- */
+
+.head-content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+.sub-body {
+    width: 95%;
+    margin: auto;
+}
+
+.hr-1 {
+    border-top: 3px solid black;
+    border-right: none;
+    border-left: none;
+    padding-bottom: 2px;
+
+}
+
+.hr-2 {
+    border-top: 2px solid black;
+    border-right: none;
+    border-left: none;
+}
+
+.second-form {
+    padding-top: 20px;
+
+}
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #cc0e74;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
