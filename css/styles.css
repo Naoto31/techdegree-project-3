@@ -1,24 +1,26 @@
-* {
-    margin: 0px;
-    padding: 0px;
-
-}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
 /* --- Basic --- */
-    
-header{ 
+
+header {
     background-color: #142850;
     color: white;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin: auto;
 
 }
+
 body {
-    
-font-family: 'Nunito', sans-serif;
-  color: #384047;
-  padding-bottom: 30px;
+
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+    padding-bottom: 30px;
 }
 
 footer {
@@ -42,7 +44,7 @@ form {
 label {
     display: block;
     margin-bottom: 8px;
-  }
+}
 
 label.light {
     font-weight: 300;
@@ -56,18 +58,18 @@ input[type="number"],
 textarea,
 select {
 
-  border: none;
-  font-size: 16px;
-  height: auto;
-  margin: 0;
-  outline: 0;
-  padding: 15px;
-  width: 100%;
-  border-radius: 8px;
-  background-color: #f4eeff;
-  color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #f4eeff;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
 }
 
 select {
@@ -75,12 +77,25 @@ select {
 }
 
 
-input[type="number"] {
+input[id^="zip"] {
     width: 40%;
 
 }
 
+input[id^="city"] {
+    background-color: #7f78d2;
 
+}
+
+
+input::placeholder {
+    color: #30475e;
+    font-size: 0.85em;
+    font-style: italic;
+    padding-right: 5px;
+    text-align: right;
+
+}
 
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -88,36 +103,31 @@ input[type="tel"]:focus,
 textarea:focus,
 #state:focus {
     border: 3px solid #555;
-    text-align:left;
+    text-align: left;
 
 }
 
-
-input[placeholder='Required'] {
-   text-align: right;
-
-}
 
 
 /* --- Radio & Checkbox --- */
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 0 4px 8px 0;
+    margin: 0 4px 8px 0;
 }
 
 
 /* --- Class --- */
 
 .head-content {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
     line-height: 1.5;
 
 }
 
 .sub-body {
-    width: 95%;
+    width: 90%;
     margin: auto;
 }
 
@@ -151,4 +161,14 @@ button {
     border: none;
     width: 100%;
     margin-bottom: 10px;
-  }
+}
+
+
+/* --- Laptop & Tablet --- */
+
+@media screen and (min-width: 768px) {
+
+    .sub-body {
+        width: 760px;
+    }
+}
