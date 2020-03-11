@@ -39,12 +39,14 @@ legend {
     font: bold 20px black;
     position:absolute;
     margin-top: -30px;
+    font-family: 'Baloo', cursive;
 }
 
 fieldset {
     position:relative;
     padding-top: 20px;
 }
+
 
 /* --- form --- */
 
@@ -57,7 +59,7 @@ form {
 
 label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
 }
 
 label.light {
@@ -261,6 +263,7 @@ button {
 
     input[id^="zip"] {
         width: 40%;
+        margin-left: 136px;
 
     }
 
